@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins" sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pic.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.banner h1
+{
+    font-style: italic;
+    position: absolute;
+    font-size: 400px;
+    left: 50%;
+    color: gray;
+    -webkit-text-stroke-width: 5px ;
+    -webkit-text-stroke-color: black;
+    transform: translate(-50%,-50%);
+    z-index:1;
+}
+.drone-box{
+    margin: 150px auto;
+    width: 200px;
+    position: relative;
+    z-index: 333;
+}
+.drone-pic
+{
+    width: 100%;
+
+}
+.drone-left{
+   
+    width: 80px;
+    top: 0;
+    left: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+.drone-right{
+   
+    width: 80px;
+    right: -11px;
+    top: 0;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+@keyframes rotation {
+    100%{
+        transform: rotatey(360deg);
+    }
+}
